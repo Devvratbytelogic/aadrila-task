@@ -1,0 +1,41 @@
+.form_wrapper {
+  .form_input_field_wrapper {
+    @apply mb-4 relative w-full;
+  }
+
+  .form_input_field_wrapper_with_label {
+    @apply mb-10 relative;
+  }
+
+  .two_column_form_field_wrapper {
+    @apply flex flex-wrap sm:flex-nowrap gap-2 w-full;
+
+    .form_input_field_wrapper_with_label {
+      @apply w-full mb-10;
+    }
+
+    .form_input_field_wrapper {
+      @apply w-full mb-4;
+    }
+  }
+
+  input,
+  textarea,
+  select {
+    @apply rounded-xl border border-[#959595] py-3 px-4 w-full outline-none focus:border-secondary;
+  }
+
+  textarea {
+    min-height: 160px;
+    resize: none;
+  }
+}
+
+.error_message {
+  @apply text-red-500 text-sm mt-1 text-left;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}

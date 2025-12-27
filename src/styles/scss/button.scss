@@ -1,0 +1,57 @@
+.btn_global {
+  @apply min-w-40.5 min-h-13 px-7 text-base font-medium font-raleway inline-flex items-center justify-center transition-all duration-300;
+
+  &.rounded_btn {
+    @apply rounded-full;
+  }
+
+  &.rounded_md_btn {
+    @apply rounded-md;
+  }
+
+  &.rounded_lg_btn {
+    @apply rounded-lg;
+  }
+
+  &.rounded_none {
+    @apply rounded-none;
+  }
+
+  &.bg_primary {
+    @apply bg-primary text-white;
+  }
+
+  &.outline_primary {
+    @apply text-primary border border-primary bg-transparent;
+  }
+
+  &.bg_secondary {
+    @apply bg-secondary text-white;
+  }
+
+  &.outline_secondary {
+    @apply text-white border border-secondary bg-transparent;
+  }
+
+  /* ===== Gradient Custom ===== */
+  &.gradient_button {
+    @apply text-white;
+    background: linear-gradient(90deg, var(--color-secondary) 11%, var(--color-primary) 100%);
+  }
+
+  &.gradient_button:hover {
+    background: linear-gradient(90deg, var(--color-primary) 11%, var(--color-secondary) 100%);
+  }
+
+  &.large_text_button {
+    @apply text-xl font-bold;
+  }
+
+  &.full_width {
+    @apply w-full;
+  }
+
+  &.auto_width {
+    @apply w-fit! min-w-fit!;
+  }
+}
